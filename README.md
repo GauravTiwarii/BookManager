@@ -22,7 +22,7 @@ Install and Configure Mongodb, using following steps :
 
 
 ---------------------------------------------
-Install following Python3 requirements :
+Install following Python requirements :
 
 1. Run "pip install virtualenv flask Flask-API mongoengine pytest pytest-cov requests"
 
