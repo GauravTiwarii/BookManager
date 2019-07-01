@@ -75,3 +75,4 @@ def test_delete_books(test_client, init_database):
 	json_response = json.loads(response.data)
 
 	assert json_response["status_code"] == 200
+	assert json_response["message"] != None
