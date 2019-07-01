@@ -34,3 +34,29 @@ Run the App, using Following commands :
 3. Run "pytest --cov"
 4. Run "flask run" 
 ---------------------------------------
+
+
+Test coverage status :
+
+
+---------- coverage: platform linux2, python 2.7.15-final-0 ----------
+Name                                     Stmts   Miss  Cover
+------------------------------------------------------------
+app/__init__.py                             51      0   100%
+app/models.py                               10      0   100%
+app/services/__init__.py                     0      0   100%
+app/services/external_books.py              20      1    95%
+app/utils/__init__.py                        0      0   100%
+app/utils/book_processor.py                 49      3    94%
+app/utils/db_utils.py                       16      3    81%
+instance/__init__.py                         0      0   100%
+instance/config.py                          18      0   100%
+tests/__init__.py                            0      0   100%
+tests/conftest.py                           14      0   100%
+tests/test_APIs/__init__.py                  0      0   100%
+tests/test_APIs/test_APIs.py                32      0   100%
+tests/test_db_models/__init__.py             0      0   100%
+tests/test_db_models/test_db_models.py       9      0   100%
+------------------------------------------------------------
+TOTAL                                      219      7    97%
+
