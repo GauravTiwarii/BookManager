@@ -30,9 +30,10 @@ Install following Python requirements :
 Run the App, using Following commands :
 
 1. Run "virtualenv book_manager_env"
-2. Run "source .initial_setup" [ sources env variables, which assists in configuring venv, mongodb and Flask]
-3. Run "pytest --cov"
-4. Run "flask run" 
+2. Run "cd <path_to_BookManager>"
+3. Run "source .initial_setup" [ sources env variables, which assists in configuring venv, mongodb and Flask]
+4. Run "pytest --cov"
+5. Run "flask run" 
 ---------------------------------------
 
 
