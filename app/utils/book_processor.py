@@ -13,9 +13,7 @@ class GetBookProcessor(BookProcessor):
 	@classmethod
 	def process(self, id):
 		book = Book.objects(id=int(id)).first()
-		fetched_book = BookFormatProcessor.get_book_in_json(book)
-
-		return fetched_book
+		return BookFormatProcessor.get_book_in_json(book)
 		
 
 class UpdateBookProcessor(BookProcessor):
@@ -26,18 +24,7 @@ class UpdateBookProcessor(BookProcessor):
 				book[key] = value
 			book.save()
 			book.reload()
-			
-			book = {
-				"id":book["id"],
-				"name": book["name"], 
-				"isbn": book["isbn"],
-				"authors": book["authors"],
-				"country": book["country"],
-				"number_of_pages": book["number_of_pages"],
-				"publisher": book["publisher"],
-				"release_date": str(book["release_date"]).split(" ")[0]
-			}
-			return book
+			return BookFormatProcessor.get_book_in_json(book)
 
 class SearchBookProcessor(BookProcessor):
 	@classmethod
