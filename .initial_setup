@@ -1,0 +1,5 @@
+source ./book_manager_env/bin/activate
+export FLASK_APP="run.py"
+export SECRET="string_generated_by_pseudo_random_generator"
+export CONFIG_TYPE="development"
+export DATABASE_URL="mongodb://localhost:27017/book_manager"
