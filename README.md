@@ -30,9 +30,9 @@ Install following Python requirements :
 Run the App, using Following commands :
 
 1. Run "virtualenv book_manager_env"
-2. Run "pip install flask Flask-API mongoengine pytest pytest-cov requests"
+2. Run "source .initial_setup" [ sources env variables, which assists in configuring venv, mongodb and Flask] 
 3. Run "cd <path_to_BookManager>"
-4. Run "source .initial_setup" [ sources env variables, which assists in configuring venv, mongodb and Flask]
+4. Run "pip install flask Flask-API mongoengine pytest pytest-cov requests"
 5. Run "pytest --cov"
 6. Run "flask run" 
 ---------------------------------------
