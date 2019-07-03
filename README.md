@@ -24,16 +24,17 @@ Install and Configure Mongodb, using following steps :
 ---------------------------------------------
 Install following Python requirements :
 
-1. Run "pip install virtualenv flask Flask-API mongoengine pytest pytest-cov requests"
+1. Run "pip install virtualenv"
 
 ----------------------------------------------
 Run the App, using Following commands :
 
 1. Run "virtualenv book_manager_env"
-2. Run "cd <path_to_BookManager>"
-3. Run "source .initial_setup" [ sources env variables, which assists in configuring venv, mongodb and Flask]
-4. Run "pytest --cov"
-5. Run "flask run" 
+2. Run "pip install flask Flask-API mongoengine pytest pytest-cov requests"
+3. Run "cd <path_to_BookManager>"
+4. Run "source .initial_setup" [ sources env variables, which assists in configuring venv, mongodb and Flask]
+5. Run "pytest --cov"
+6. Run "flask run" 
 ---------------------------------------
 
 
